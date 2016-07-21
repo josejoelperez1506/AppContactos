@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.joseperez.appcontactos.BuscarContacto"
+    android:background="#ccb255">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/lvlitems"
+        android:layout_below="@+id/id_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/id_txt"
+        android:text="Id"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/apellido_txt"
+        android:layout_toStartOf="@+id/apellido_txt"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Apellido"
+        android:id="@+id/apellido_txt"
+        android:layout_above="@+id/lvlitems"
+        android:layout_toLeftOf="@+id/nombre_txt"
+        android:layout_toStartOf="@+id/nombre_txt"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nombre"
+        android:id="@+id/nombre_txt"
+        android:layout_above="@+id/lvlitems"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Teléfono"
+        android:id="@+id/telefono_txt"
+        android:layout_above="@+id/lvlitems"
+        android:layout_toRightOf="@+id/nombre_txt"
+        android:layout_toEndOf="@+id/nombre_txt"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:textColor="#000000" />
+</RelativeLayout>
